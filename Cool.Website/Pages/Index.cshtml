@@ -1,0 +1,68 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Dhaka Stock Exchange</h1>
+
+</div>
+
+
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Table visualization</h2>
+
+    <p>Here Is the details DSE trade</p>
+
+
+
+
+    <table style="width:100%">
+        <tr>
+            <th>Date</th>
+            <th>Trade Code</th>
+            <th>High</th>
+            <th>low</th>
+            <th>Open</th>
+            <th>Close</th>
+            <th>Volume</th>
+        </tr>
+
+
+
+
+
+
+
+
+        @foreach (var product in Model.Products)
+        {
+
+
+
+
+
+            <tr>
+                <th>@product.date</th>
+                <th>@product.trade_codet</th>
+                <th>@product.high</th>
+                <th>@product.low</th>
+                <th>@product.open</th>
+                <th>@product.close</th>
+                <th>@product.volume</th>
+
+            </tr>
+        }
+
+    </table>
+
+</body>
