@@ -1,0 +1,35 @@
+﻿@page "/Market"
+
+@using Data_library
+@using BlazorApp.Models
+@using Microsoft.Extensions.Configuration
+@inject Data_library.IDataAccess _Data
+@inject IConfiguration _config
+
+<h3>Market</h3>
+@if (market==null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @foreach(var p in market)
+    {
+        <p>
+            @p.open
+            @p.close
+        </p>
+    }
+}
+
+
+
+@code {
+    List<MarketModel> markets;
+    protected override async Task OnInitializedAsync()
+    {
+
+        string sql = "select * from market";
+        market = await _Data.LoadData<MarketModel, dynamic>(sql, new { }, _config.GetConnectionString("default"));
+    }
+}

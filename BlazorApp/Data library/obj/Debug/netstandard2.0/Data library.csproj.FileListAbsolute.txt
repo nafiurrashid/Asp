@@ -1,0 +1,6 @@
+C:\Users\Nafiur Rashid\source\repos\BlazorApp\Data library\bin\Debug\netstandard2.0\Data library.deps.json
+C:\Users\Nafiur Rashid\source\repos\BlazorApp\Data library\bin\Debug\netstandard2.0\Data library.dll
+C:\Users\Nafiur Rashid\source\repos\BlazorApp\Data library\obj\Debug\netstandard2.0\Data library.csprojAssemblyReference.cache
+C:\Users\Nafiur Rashid\source\repos\BlazorApp\Data library\obj\Debug\netstandard2.0\Data library.AssemblyInfoInputs.cache
+C:\Users\Nafiur Rashid\source\repos\BlazorApp\Data library\obj\Debug\netstandard2.0\Data library.AssemblyInfo.cs
+C:\Users\Nafiur Rashid\source\repos\BlazorApp\Data library\obj\Debug\netstandard2.0\Data library.csproj.CoreCompileInputs.cache
